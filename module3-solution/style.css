@@ -1,0 +1,56 @@
+header {
+  background-color: #ddd;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 20px 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-btn {
+  display: none;
+  font-size: 24px;
+}
+button {
+  border: none;
+  background-color: transparent;
+}
+.dropdown {
+  position: static;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.dropdown-menu {
+  width: 100%;
+  margin-top: 20px !important;
+  text-align: center;
+  border-radius: 0;
+}
+.dropdown-menu li:nth-child(2) {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.section1 {
+  text-align: center;
+  padding: 30px 0;
+}
+.row {
+  margin: 30px 0;
+}
+.col {
+  padding: 5px;
+}
+.chicken-div,
+.beef-div,
+.sushi-div {
+  padding: 10px;
+  background-color: #ddd;
+}
+@media only screen and (max-width: 576px) {
+  .menu-btn {
+    display: block;
+  }
+}
